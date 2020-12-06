@@ -14,8 +14,8 @@ pv = p * (pow((1 + r/100/n),n * t))
           
 print (pv)
 
-def compund_interest(p, r, n ,t):
-    balance = p * (pow(1 + r/100/n, n * t ))
+def compound_interest(p, r, n ,t):
+    balance = p * (pow((1 + r/100/n), n * t ))
     ci = balance - p
     print("Balance at the end of the period ",round(balance,2))
     print("Interest earned is ",round(ci,2))
