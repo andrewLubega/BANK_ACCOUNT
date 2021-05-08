@@ -22,8 +22,13 @@ class Bank_Account:
         else:
             print("\n Insufficient principle ")
 
+    def deposit(self):
+        amount = float(input("Enter amount to be Deposited: "))
+        self.balance += amount
+        print("n Amount Deposited: ", amount)
+
     def display(self):
-        print(self.name, ": \t Net Available principle=", self.balance)
+        print(self.name, ": \t Net Available principle =", self.balance)
 
     def compound_interest(self, p, r, n ,t):
         p = float(input("What's the principle: $ "))
@@ -58,10 +63,6 @@ print(aris_account.display())
 
 jacore_account = Bank_Account(100000, "jacore")
 print(jacore_account.display())
-
-
-
-
 
 """
 interest = x * balance

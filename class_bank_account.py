@@ -15,6 +15,7 @@ class Bank_Account:
         print("\n Amount Deposited: ", amount)
     def display(self):
         print("\n Net Available Balance=",self.balance)
+
     
 # creating an object of class
 s = Bank_Account()
